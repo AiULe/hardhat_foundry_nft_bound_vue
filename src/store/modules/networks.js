@@ -26,6 +26,11 @@ export default {
         name: "BSC Test",
         code: 97,
       },
+      {
+        chainId: "0x7a69",
+        name: "Hardhat localhost test",
+        code: 31337,
+      },
     ],
     // activeNetwork: "0x38",
   },

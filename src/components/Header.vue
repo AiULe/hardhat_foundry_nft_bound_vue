@@ -7,9 +7,9 @@
         </div>
       </router-link>
       <nav>
-        <router-link :to="{ name: 'home' }" class="nav-link">主頁</router-link>
+        <router-link :to="{ name: 'home' }" class="nav-link">主页</router-link>
         <router-link :to="{ name: 'bond' }" class="nav-link">NFTs</router-link>
-        <router-link :to="{ name: 'stake' }" class="nav-link">質押</router-link>
+        <router-link :to="{ name: 'stake' }" class="nav-link">质押</router-link>
         <div class="btns-wrap">
           <NetworkButton
             @click="networkClickHandler"

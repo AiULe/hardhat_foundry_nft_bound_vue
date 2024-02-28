@@ -51,6 +51,11 @@ export default {
           title: 'TEST',
           icon: binanceIcon,
         },
+        {
+          chainid: '0x7a69',
+          title: 'Hardhat local Test',
+          icon: binanceIcon,
+        },
       ],
     };
   },

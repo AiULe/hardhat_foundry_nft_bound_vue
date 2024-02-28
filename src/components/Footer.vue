@@ -2,7 +2,7 @@
   <footer class="app-footer">
     <div class="container">
       <div class="links-wrap">
-        <a target="_blank" href="/" class="link-item">超連結1</a>
+        <a target="_blank" href="/" class="link-item">超链接1</a>
       </div>
     </div>
   </footer>

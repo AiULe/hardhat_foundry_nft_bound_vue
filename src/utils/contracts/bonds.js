@@ -1,8 +1,8 @@
 export default [
   {
-    contractChain: "0xa869",
+    contractChain: "0x7a69",
     fishNft: {
-      address: "0xb428336eF2FC5Db28D2c17566289b7ECA3778b86",
+      address: "0xc6e7DF5E7b4f2A278906862b61205850344D4e7d",
       abi: [
         {
           "anonymous": false,
@@ -685,6 +685,25 @@ export default [
             }
           ],
           "name": "setReleaseCycle",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bool",
+              "name": "_bool",
+              "type": "bool"
+            }
+          ],
+          "name": "setStateOpen",
           "outputs": [
             {
               "internalType": "bool",

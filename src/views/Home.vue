@@ -34,7 +34,7 @@
         </div>
         <div class="content">
           <small>
-            我是教學案例，請同學們不要直接用該代碼作為自己項目，至少把樣式全部改一遍再用
+            NFT债券
           </small>
         </div>
         <p>1.做路由</p>

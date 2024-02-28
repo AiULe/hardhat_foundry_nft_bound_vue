@@ -63,6 +63,21 @@ export default {
             decimals: 18,
           },
         },
+        {
+          chainId: '0x7a69',
+          chainName: 'Hardhat localhost test',
+
+          rpcUrls: ['http://127.0.0.1:8545/'],
+
+          iconUrls: [
+            'https://s2.coinmarketcap.com/static/img/coins/200x200/1839.png',
+          ],
+          nativeCurrency: {
+            name: 'GO',
+            symbol: 'GO',
+            decimals: 18,
+          },
+        },
       ],
     };
   },
@@ -95,12 +110,12 @@ export default {
           type: 'browser',
           isShow: true,
         });
-        this.$emit('checkError', '請安裝 MetaMask！');
+        this.$emit('checkError', '请安装 MetaMask！');
         return false;
       }
 
       if (provider !== window.ethereum) {
-        this.$emit('checkError', '你安裝了多個錢包嗎？');
+        this.$emit('checkError', '你安裝了多个钱包吗？');
         return false;
       }
 
@@ -189,7 +204,7 @@ export default {
       const routeName = this.$route.name;
       if (routeName !== 'Home') this.$router.push({ name: 'Home' });
 
-      this.$emit('checkError', '請再次斷開處理程序');
+      this.$emit('checkError', '请再次断开处理程序');
     },
   },
   created() {

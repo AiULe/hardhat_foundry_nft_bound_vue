@@ -6,7 +6,7 @@
       class="close-btn"
       @click="closePopup()"
     />
-    <p class="title text-start">選擇網絡</p>
+    <p class="title text-start">选择网络</p>
 
     <div class="networks-wrap">
       <div v-for="network in networksArr" :key="network.chainId">
@@ -72,6 +72,19 @@ export default {
             decimals: 18,
           },
         },
+        {
+          chainId: '0x7a69',
+          chainName: 'Hardhat localhost test',
+          rpcUrls: ['http://127.0.0.1:8545/'],
+          iconUrls: [
+            'https://s2.coinmarketcap.com/static/img/coins/200x200/1839.png',
+          ],
+          nativeCurrency: {
+            name: 'GO',
+            symbol: 'GO',
+            decimals: 18,
+          },
+        },
       ],
     };
   },
@@ -90,6 +103,7 @@ export default {
       // if (activeNewtork === '0x38') return 'Binance Smart Chain'
 
       // if (activeNewtork === '0xfa') return 'Fantom Opera'
+      if (activeNewtork === '0x7a69') return 'Hardhat localhost Test'
 
       return '';
     },

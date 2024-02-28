@@ -6,7 +6,7 @@
         <div>
           <div>
             <p>sFISH 价格 ｜ {{ SFish_USDPrice }}</p>
-            <p>价值 ｜ 1個 sFISH = {{ Fish_SFishPrice }} 個FISH</p>
+            <p>价值 ｜ 1个 sFISH = {{ Fish_SFishPrice }} 个FISH</p>
             <p>你的 FISH 余额 ｜ {{ FISHBalanceOf }} （FISH）</p>
             <p>你已质押 sFISH ｜ {{ SFISHBalanceOf }} （sFISH）</p>
           </div>
@@ -21,7 +21,7 @@
                       @click="reverse()"
                       :class="!stakeState ? '' : 'action'"
                     >
-                      質押
+                      质押
                     </div>
                   </div>
                   <div class="col-6">
@@ -30,7 +30,7 @@
                       @click="reverse()"
                       :class="stakeState ? '' : 'action'"
                     >
-                      贖回
+                      赎回
                     </div>
                   </div>
                 </div>
@@ -83,7 +83,7 @@
                 @click="stake()"
                 v-if="fishIsApporve && stakeState"
               >
-                質押
+                质押
               </button>
               <button
                 type="button"
@@ -91,7 +91,7 @@
                 @click="unStake()"
                 v-if="sFishIsApporve && !stakeState"
               >
-                贖回
+                赎回
               </button>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default {
 
     if (!isConnected) {
       this.$router.push({ name: 'home' });
-      alert('請先連結錢包');
+      alert('请先连接钱包');
       return false;
     }
   },
